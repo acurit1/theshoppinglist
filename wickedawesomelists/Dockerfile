@@ -1,4 +1,5 @@
 FROM php
-WORKDIR /app
+#WORKDIR /app
 COPY . .
-CMD [ "php", "./index.php" ]
+EXPOSE 80
+CMD ["php", "-S", "0.0.0.0:80"]
